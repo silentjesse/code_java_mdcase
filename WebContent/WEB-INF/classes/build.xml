@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Jul 21, 2010 10:19:00 AM                                                        
+
+     platformMonitor    
+     description
+                   
+     Jesse                                                                
+     ====================================================================== -->
+<project name="final" default="jar" basedir=".">
+	<property name="name" value="AISLEGACYGW"></property><!-- same as  your java project-->
+   	<property name="base.dir" value="G:\workspace\aadcase\WebRoot\WEB-INF"></property>
+	<property name="jar.name" value="${base.dir}\classes\dcaseUtils.jar"></property>
+	<target name="jar">
+		<echo>${base.dir}</echo>
+		<jar jarfile="${jar.name}" basedir="${base.dir}\classes"></jar>
+	</target>
+</project>
